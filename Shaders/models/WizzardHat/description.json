@@ -1,0 +1,11 @@
+{
+	"type" : "basicprop",
+	"object" : "Hat.obj",
+	"title" : "Art Deco Overhead Fan",
+	"description" : "",
+	"metadata" : "transparency:off",
+	"scale" : 0.75,
+	"visibility" : "public",
+	"preview" : "preview.jpg",
+	"tags" : ["styles|art deco", "architecture|fans"]
+}
