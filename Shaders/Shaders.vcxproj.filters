@@ -182,7 +182,19 @@
     <None Include="Shaders\cardboard.fs">
       <Filter>Shaders\Standard</Filter>
     </None>
-    <None Include="curved_Glass.fs">
+    <None Include="Shaders\binoculars.fs">
+      <Filter>Shaders\PostProcessing</Filter>
+    </None>
+    <None Include="Shaders\binoculars.vs">
+      <Filter>Shaders\PostProcessing</Filter>
+    </None>
+    <None Include="Shaders\curved_Glass.fs">
+      <Filter>Shaders\PostProcessing</Filter>
+    </None>
+    <None Include="Shaders\screenwave.fs">
+      <Filter>Shaders\PostProcessing</Filter>
+    </None>
+    <None Include="Shaders\screenwave.vs">
       <Filter>Shaders\PostProcessing</Filter>
     </None>
   </ItemGroup>

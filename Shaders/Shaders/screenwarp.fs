@@ -6,7 +6,8 @@ varying vec2 texCoord;
 
 void main()
 {
-	float length = sqrt(((texCoord.x - 0.5) * (texCoord.x - 0.5)) + ((texCoord.y - 0.5) * (texCoord.y - 0.5)));
+    float effect = 0.7f;
+	float length = sqrt(((texCoord.x - effect) * (texCoord.x - effect)) + ((texCoord.y - effect) * (texCoord.y - effect)));
 
 	mat3 rotationMatrix = mat3(
 		cos(time * length), -sin(time * length), 0,
@@ -14,7 +15,7 @@ void main()
 		0, 0, 1.0
 	);
 
-	vec3 rotatedPosition = vec3(texCoord.x - 0.5, texCoord.y - 0.5, 0);
+	vec3 rotatedPosition = vec3(texCoord.x - effect, texCoord.y - effect, 0);
 	rotatedPosition = rotationMatrix * rotatedPosition;
-	gl_FragColor = texture2D(s_texture, vec2(rotatedPosition.x + 0.5, rotatedPosition.y + 0.5));
+	gl_FragColor = texture2D(s_texture, vec2(rotatedPosition.x + effect, rotatedPosition.y + effect));
 }

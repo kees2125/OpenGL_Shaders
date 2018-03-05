@@ -1,11 +1,9 @@
 #include "Window.h"
 #include "Model.h"
-#include "skyBox.h"
 
 GLuint fboTextureId;
 GLuint fboId;
 Modelmanager* shaderPreviewContent;
-skyBox skybox;
 Window::Window(Modelmanager* ModelManager)
 {
 	shaderPreviewContent = ModelManager;
@@ -17,7 +15,6 @@ Window::Window(Modelmanager* ModelManager)
 	shaderPreviewContent->previewModels.push_back(WizzardHat);
 	shaderPreviewContent->previewModels.push_back(car);
 
-	skybox.initskybox();
 	//basic shaders
 	Shader* shader = new Shader("Shaders/texture.vs", "Shaders/texture.fs", "Shaders/standard.gs");
 	shaders.push_back(shader);
@@ -49,6 +46,14 @@ Window::Window(Modelmanager* ModelManager)
 	postProcessingShaders.push_back(pShader5);
 	Shader* pShader6 = new Shader("Shaders/negative.vs", "Shaders/negative.fs", "Shaders/standardpost.gs");
 	postProcessingShaders.push_back(pShader6);
+	Shader* pShader7 = new Shader("Shaders/scope.vs", "Shaders/scope.fs", "Shaders/standardpost.gs");
+	postProcessingShaders.push_back(pShader7);
+	Shader* pShader8 = new Shader("Shaders/screenwarp.vs", "Shaders/screenwarp.fs", "Shaders/standardpost.gs");
+	postProcessingShaders.push_back(pShader8);
+	Shader* pShader9 = new Shader("Shaders/screenwave.vs", "Shaders/screenwave.fs", "Shaders/standardpost.gs");
+	postProcessingShaders.push_back(pShader9);
+	Shader* pShader10 = new Shader("Shaders/binoculars.vs", "Shaders/binoculars.fs", "Shaders/standardpost.gs");
+	postProcessingShaders.push_back(pShader10);
 
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
@@ -124,10 +129,9 @@ void Window::Setup()
 
 void Window::Display()
 {
-	
+	//skybox.drawSkybox(1000.0f);
 	shaderPreviewContent->getCurrentModel()->draw();
 
-	//Space::Instance()->building->draw();
 
 	glBindVertexArray(0);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -137,7 +141,6 @@ void Window::Display()
 		glBindFramebuffer(GL_FRAMEBUFFER, 0);
 		glViewport(0, 0, screenSize.x, screenSize.y);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		skybox.drawSkybox(100.0f);
 		std::vector<glm::vec2> verts;
 		verts.push_back(glm::vec2(-1, -1));
 		verts.push_back(glm::vec2(-1, 1));

@@ -6,7 +6,7 @@
 using namespace std;
 enum { SKY_LEFT = 0, SKY_BACK, SKY_RIGHT, SKY_FRONT, SKY_TOP, SKY_BOTTOM };
 unsigned int skyBoxSides[6];
-string filepath = "cubemapsame_desert/desertsky_";
+string filepath = "cubemaps/ame_desert/desertsky_";
 string fileEnding[6] = { "lf.tga","bk.tga","rt.tga","ft.tga","up.tga","dn.tga" };
 
 skyBox::skyBox()

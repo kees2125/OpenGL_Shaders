@@ -152,13 +152,15 @@
     <ClInclude Include="Texture.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="curved_Glass.fs" />
+    <None Include="Shaders\binoculars.fs" />
+    <None Include="Shaders\binoculars.vs" />
     <None Include="Shaders\blackandwhite.fs" />
     <None Include="Shaders\blackandwhite.vs" />
     <None Include="Shaders\blur.fs" />
     <None Include="Shaders\blur.vs" />
     <None Include="Shaders\colourwarp.fs" />
     <None Include="Shaders\colourwarp.vs" />
+    <None Include="Shaders\curved_Glass.fs" />
     <None Include="Shaders\explosion.gs" />
     <None Include="Shaders\implosion.gs" />
     <None Include="Shaders\laplace.fs" />
@@ -175,6 +177,8 @@
     <None Include="Shaders\scope.vs" />
     <None Include="Shaders\screenwarp.fs" />
     <None Include="Shaders\screenwarp.vs" />
+    <None Include="Shaders\screenwave.fs" />
+    <None Include="Shaders\screenwave.vs" />
     <None Include="Shaders\sharpening.fs" />
     <None Include="Shaders\sharpening.vs" />
     <None Include="Shaders\simple.fs" />
