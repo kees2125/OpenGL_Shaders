@@ -155,7 +155,7 @@ int main(int argc, char *argv[])
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
 	glutInit(&argc, argv);
 
-	glutInitWindowSize(1600, 900);
+	glutInitWindowSize(900, 900);
 	gameWindowInt = glutCreateWindow("Shader_Window");
 	glutIdleFunc(Idle);
 	glutDisplayFunc(Display);

@@ -32,6 +32,10 @@ Window::Window(Modelmanager* ModelManager)
 	shaders.push_back(shader6);
 	Shader* shader7 = new Shader("Shaders/toon.vs", "Shaders/toon.fs", "Shaders/standard.gs");
 	shaders.push_back(shader7);
+	Shader* shader8 = new Shader("Shaders/texture.vs", "Shaders/texture.fs", "Shaders/explosion.gs");
+	shaders.push_back(shader8);
+	Shader* shader9 = new Shader("Shaders/texture.vs", "Shaders/texture.fs", "Shaders/implosion.gs");
+	shaders.push_back(shader9);
 	
 
 	Shader* pShader1 = new Shader("Shaders/blur.vs", "Shaders/blur.fs", "Shaders/standardpost.gs");
