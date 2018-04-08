@@ -72,10 +72,10 @@
       <Filter>Shaders\PostProcessing</Filter>
     </None>
     <None Include="Shaders\explosion.gs">
-      <Filter>Shaders\Other</Filter>
+      <Filter>Shaders\Geomatry</Filter>
     </None>
     <None Include="Shaders\implosion.gs">
-      <Filter>Shaders\Other</Filter>
+      <Filter>Shaders\Geomatry</Filter>
     </None>
     <None Include="Shaders\filmgrain.fs">
       <Filter>Shaders\PostProcessing</Filter>
@@ -120,10 +120,10 @@
       <Filter>Shaders\PostProcessing</Filter>
     </None>
     <None Include="Shaders\standard.gs">
-      <Filter>Shaders\Other</Filter>
+      <Filter>Shaders\Geomatry</Filter>
     </None>
     <None Include="Shaders\standardpost.gs">
-      <Filter>Shaders\Other</Filter>
+      <Filter>Shaders\Geomatry</Filter>
     </None>
     <None Include="Shaders\simple.fs">
       <Filter>Shaders\Standard</Filter>
@@ -173,15 +173,6 @@
     <None Include="Shaders\sharpening.vs">
       <Filter>Shaders\PostProcessing</Filter>
     </None>
-    <None Include="Test.gs">
-      <Filter>Shaders\Other</Filter>
-    </None>
-    <None Include="Shaders\cardboard.vs">
-      <Filter>Shaders\Standard</Filter>
-    </None>
-    <None Include="Shaders\cardboard.fs">
-      <Filter>Shaders\Standard</Filter>
-    </None>
     <None Include="Shaders\binoculars.fs">
       <Filter>Shaders\PostProcessing</Filter>
     </None>
@@ -195,6 +186,21 @@
       <Filter>Shaders\PostProcessing</Filter>
     </None>
     <None Include="Shaders\screenwave.vs">
+      <Filter>Shaders\PostProcessing</Filter>
+    </None>
+    <None Include="Shaders\cardboard.fs">
+      <Filter>Shaders\Standard</Filter>
+    </None>
+    <None Include="Shaders\cardboard.vs">
+      <Filter>Shaders\Standard</Filter>
+    </None>
+    <None Include="Shaders\sand.gs">
+      <Filter>Shaders\Geomatry</Filter>
+    </None>
+    <None Include="Shaders\pixelation.fs">
+      <Filter>Shaders\PostProcessing</Filter>
+    </None>
+    <None Include="Shaders\pixalation.vs">
       <Filter>Shaders\PostProcessing</Filter>
     </None>
   </ItemGroup>
@@ -214,7 +220,7 @@
     <Filter Include="Shaders\Standard">
       <UniqueIdentifier>{f8a864e0-2f43-46f8-a82c-8dc969150cf2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Shaders\Other">
+    <Filter Include="Shaders\Geomatry">
       <UniqueIdentifier>{b44ea4e1-5f64-4fbc-b13d-0820e2477059}</UniqueIdentifier>
     </Filter>
   </ItemGroup>

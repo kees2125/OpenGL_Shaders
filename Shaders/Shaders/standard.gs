@@ -5,6 +5,7 @@ layout (triangle_strip, max_vertices = 3) out;
 in vec2 texCoordIn[];
 in vec3 colorIn[];
 in vec3 normalIn[];
+uniform float time;
 out vec2 texCoord;
 out vec3 color;
 out vec3 normal;

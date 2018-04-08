@@ -158,6 +158,8 @@
     <None Include="Shaders\blackandwhite.vs" />
     <None Include="Shaders\blur.fs" />
     <None Include="Shaders\blur.vs" />
+    <None Include="Shaders\cardboard.fs" />
+    <None Include="Shaders\cardboard.vs" />
     <None Include="Shaders\colourwarp.fs" />
     <None Include="Shaders\colourwarp.vs" />
     <None Include="Shaders\curved_Glass.fs" />
@@ -169,10 +171,13 @@
     <None Include="Shaders\filmgrain.vs" />
     <None Include="Shaders\negative.fs" />
     <None Include="Shaders\negative.vs" />
+    <None Include="Shaders\pixalation.vs" />
+    <None Include="Shaders\pixelation.fs" />
     <None Include="Shaders\procedural.vs" />
     <None Include="Shaders\procedural.fs" />
     <None Include="Shaders\rainbow.fs" />
     <None Include="Shaders\rainbow.vs" />
+    <None Include="Shaders\sand.gs" />
     <None Include="Shaders\scope.fs" />
     <None Include="Shaders\scope.vs" />
     <None Include="Shaders\screenwarp.fs" />
@@ -197,9 +202,6 @@
     <None Include="Shaders\toon.vs" />
     <None Include="Shaders\tvgrain.fs" />
     <None Include="Shaders\tvgrain.vs" />
-    <None Include="Shaders\cardboard.fs" />
-    <None Include="Shaders\cardboard.vs" />
-    <None Include="Test.gs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

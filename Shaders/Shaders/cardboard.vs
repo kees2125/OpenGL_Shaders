@@ -1,10 +1,8 @@
 #version 330 core
 
-uniform float time;
 uniform mat4 modelMatrix;
 uniform mat4 viewMatrix;
 uniform mat4 projectionMatrix;
-uniform mat3 normalMatrix;
 in vec3 a_position;
 in vec2 a_texcoord;
 in vec3 a_color;
