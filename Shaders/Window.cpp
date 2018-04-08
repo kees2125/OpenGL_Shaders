@@ -18,7 +18,7 @@ Window::Window(Modelmanager* ModelManager)
 	//basic shaders
 	Shader* shader = new Shader("Shaders/texture.vs", "Shaders/texture.fs", "Shaders/standard.gs");
 	shaders.push_back(shader);
-	Shader* shader1 = new Shader("Shaders/cardboard.vs", "Shaders/cardboard.fs", "Shaders/standard.gs");
+	Shader* shader1 = new Shader("Shaders/cardboard.vs", "Shaders/texture.fs", "Shaders/standard.gs");
 	shaders.push_back(shader1);
 	Shader* shader2 = new Shader("Shaders/simple.vs", "Shaders/simple.fs", "Shaders/standard.gs");
 	shaders.push_back(shader2);
@@ -58,6 +58,8 @@ Window::Window(Modelmanager* ModelManager)
 	postProcessingShaders.push_back(pShader9);
 	Shader* pShader10 = new Shader("Shaders/binoculars.vs", "Shaders/binoculars.fs", "Shaders/standardpost.gs");
 	postProcessingShaders.push_back(pShader10);
+	Shader* pShader11 = new Shader("Shaders/pixalation.vs", "Shaders/pixelation.fs", "Shaders/standardpost.gs");
+	postProcessingShaders.push_back(pShader11);
 
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
